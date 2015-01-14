@@ -9,5 +9,8 @@
   "description": "Savings multiplied skeleton project",
   "main": "public/index.html",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "skeleton": "~2.0.4"
+  }
 }
