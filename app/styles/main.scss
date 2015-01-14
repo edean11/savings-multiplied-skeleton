@@ -57,3 +57,46 @@ ul {
 	}
 
 }
+
+.nav-container {
+	background-color: #F4CAD2;
+	text-align: center;
+	font-weight: bold;
+	padding:10px 0;
+	height: 42px;
+
+	ul {
+		display: inline-block;
+
+		li {
+			display: inline-block;
+			color: #A0627D;
+			font-size: 1.35em;
+			padding-right: 70px;
+			margin: 0;
+		}
+	}
+
+	input {
+		display: inline-block;
+		border-radius: 80px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
