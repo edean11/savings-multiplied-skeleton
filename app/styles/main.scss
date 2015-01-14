@@ -49,11 +49,39 @@ ul {
 
 		ul {
 			margin: 0;
+			
+			.green{
+				background-color: #8AB83A;
+
+				&:hover {
+					background-color: darken(#8AB83A, 10%);
+				}
+			}
+
+			.purple {
+				background-color: #71278C;
+
+				&:hover {
+					background-color: darken(#71278C, 10%);
+				}
+
+			}
+
+			.pink {
+				background-color: #EA0089;
+
+				&:hover {
+					background-color: darken(#EA0089, 10%);
+				}
+
+			}
+		
 		}
 
 		img {
 			margin: auto;
 		}
+
 	}
 
 }
