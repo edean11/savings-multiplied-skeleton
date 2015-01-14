@@ -13,7 +13,10 @@
   "keywords": [
     "skeleton"
   ],
-  "author": "edean11 <edean1010@gmail.com>",
+  "authors": [
+    "edean11 <edean1010@gmail.com>",
+    "higgintop <higgintop@gmail.com"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/edean11/savings-multiplied-skeleton/issues"
