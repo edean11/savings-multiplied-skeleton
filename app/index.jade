@@ -10,68 +10,75 @@ html(lang="en-US")
     link(rel="stylesheet" href="css/main.css")
 
   body
-    .container
-      .header
+    .header.u-full-width
+      .header-content
         .header-signin
-          ul
+          ul.u-pull-right
             li sign in
             li sign up
         .header-main
-          img(src="img/savings-multiplied-logo.png")
-          ul
-            li About
-            li Contact
-            li Blog
-            li Press
-          img(src="img/tagline.png")
-      .nav-container
+          .row
+            .five.columns.header-logo
+              img(src="img/savings-multiplied-logo.png")
+            .seven.columns.header-list
+              ul
+                li 
+                  button.button-primary About
+                li 
+                  button.button-primary Contact
+                li 
+                  button.button-primary Blog
+                li 
+                  button.button-primary Press
+              img(src="img/tagline.png")
+    .nav-container
+      ul
+        li Buy
+        li Sell
+        li How it Works
+        li Links
+        li Community
+      form
+        input(type="text" placeholder="search")
+    .content-container
+      .row
+        .seven.columns
+          h2.content-header We're making one aspect of life easier for parents of multiples:
+          img(src="img/owl_light_blue_32.png")
+          p buying and selling gently used sets of clothes!
+          img(src="img/shop_now.png")
+          img(src="img/tree.png")
+        .five.columns
+          ul.baby-images
+            li
+              img(src="img/twins.jpg")
+            li
+              img(src="img/triplets.jpg")
+            li
+              img(src="img/quads.jpg")
+
+      .dot-container
+        img(src="img/dotted_line.png")
+      .footer-container
         ul
-          li Buy
-          li Sell
-          li How it Works
-          li Links
-          li Community
-        form
-          input(type="text" placeholder="search")
-      .content-container
-        .row
-          .seven.columns
-            h2.content-header We're making one aspect of life easier for parents of multiples:
-            img(src="img/owl_light_blue_32.png")
-            p buying and selling gently used sets of clothes!
-            img(src="img/shop_now.png")
-            img(src="img/tree.png")
-          .five.columns
-            ul.baby-images
-              li
-                img(src="img/twins.jpg")
-              li
-                img(src="img/triplets.jpg")
-              li
-                img(src="img/quads.jpg")
-
-        .dot-container
-          img(src="img/dotted_line.png")
-        .footer-container
-          ul
-            li
-              img(src="img/facebook_footer.png")
-            li
-              img(src="img/twitter_footer.png")
-            li
-              img(src="img/message_board_footer.png")
-            li
-              img(src="img/special_offers_footer.png")
-      .link-footer
-        ul
-          li Link Here
-          li Link Here
-          li Link Here
-          li Link Here
-          li Link Here
-          li Link Here
+          li
+            img(src="img/facebook_footer.png")
+          li
+            img(src="img/twitter_footer.png")
+          li
+            img(src="img/message_board_footer.png")
+          li
+            img(src="img/special_offers_footer.png")
+    .link-footer
+      ul
+        li Link Here
+        li Link Here
+        li Link Here
+        li Link Here
+        li Link Here
+        li Link Here
 
 
-  
+
 
     script(src="js/main.js")
