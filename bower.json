@@ -1,0 +1,12 @@
+{
+  "name": "savings-multiplied-skeleton",
+  "version": "0.0.1",
+  "homepage": "https://github.com/edean11/savings-multiplied-skeleton",
+  "authors": [
+    "Allison Higginbotham <higgintop@gmail.com>"
+  ],
+  "description": "Savings multiplied skeleton project",
+  "main": "public/index.html",
+  "license": "MIT",
+  "private": true
+}
