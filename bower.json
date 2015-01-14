@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "homepage": "https://github.com/edean11/savings-multiplied-skeleton",
   "authors": [
-    "Allison Higginbotham <higgintop@gmail.com>"
+    "Allison Higginbotham <higgintop@gmail.com>",
+    "Ed Dean <edean1010@gmail.com>"
   ],
   "description": "Savings multiplied skeleton project",
   "main": "public/index.html",
