@@ -34,6 +34,7 @@ ul {
 .header-main {
 	background-color: white;
 	border-radius: 30px 30px 0 0;
+	width: 100%;
 
 	li {
 		display: inline-block;
@@ -46,6 +47,7 @@ ul {
 	.header-list {
 		text-align: center;
 		padding-top: 40px;
+		overflow: hidden;
 
 		ul {
 			margin: 0;
@@ -79,6 +81,7 @@ ul {
 		}
 
 		img {
+			width: 80%;
 			margin: auto;
 		}
 
@@ -177,6 +180,22 @@ ul {
 			}
 		}
 
+
+	}
+
+
+
+	@media screen and(max-width: 1200px){
+		.header-main {
+			.header-list {
+				width: 100%;
+				display: block;
+				margin: 0 auto;
+				padding-top: 0;
+
+			}
+
+		}
 
 	}
 
