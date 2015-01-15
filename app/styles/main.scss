@@ -286,6 +286,18 @@ ul {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Search Page Specific Styles */
 
 .filter-container {
@@ -311,7 +323,6 @@ ul {
 		width: 50px;
 		font-size: 0.8em;
 		padding-left: 2px;
-		
 	}
 
 	.green{
@@ -325,11 +336,36 @@ ul {
 		width: 100%;
 	}
 
+	.condition-container {
+		padding: 30px 0 20px;
+	}
+
 	label {
 		display: inline-block;
 	}
 	input[type="radio"] {
 		width: 20px;
+	}
+
+	.seven {
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.condition-labels {
+		text-align: left;
+	}
+
+	.size-container {
+		input {
+			display: inline-block;
+		}
+
+		label {
+			display: inline-block;
+		}
 	}
 }
 
