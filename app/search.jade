@@ -48,26 +48,37 @@ html(lang="en-US")
             h6 Limit your search by:
             input(type="text")
             button.button-primary.green Search
-            .row
+            .row.condition-container
               .five.columns
                 p Condition:
-              .seven.columns  
+              .seven.columns.condition-labels  
                 p
                   <input type="radio" name="condition" id="new" value="new"/> 
                   label(for="new") New
                 p
                   <input type="radio" name="condition" id="gently_used" value="gently_used"/>
                   label(for="gently_used") Gently Used
-            .size-container
-              p Size:
-              <input type="radio" name="size"/> 4
-              <input type="radio" name="size"/> 5
-              <input type="radio" name="size"/> 6
-              <input type="radio" name="size"/> 7
-              <input type="radio" name="size"/> 8
-              <input type="radio" name="size"/> 9
-              <input type="radio" name="size"/> 10
-              <input type="radio" name="size"/> 11
+             p.size-header Size:
+            .row.size-container
+              .five.columns
+                p
+                  <input class ="size-radio" type="radio" name="size" id="4"/>
+                  label(for="4") 4
+                p
+                  <input class ="size-radio" type="radio" name="size" id="5"/>
+                  label(for="5") 5
+                p
+                  <input class ="size-radio" type="radio" name="size" id="6"/>
+                  label(for="6") 6
+                p
+                  <input class ="size-radio" type="radio" name="size" id="7"/>
+                  label(for="7") 7
+                
+              .seven.columns
+                <input type="radio" name="size"/> 8
+                <input type="radio" name="size"/> 9
+                <input type="radio" name="size"/> 10
+                <input type="radio" name="size"/> 11
             .season-container
               p Season:
               <input type="radio" name="seasons"/> All Seasons
