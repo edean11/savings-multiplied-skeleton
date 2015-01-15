@@ -81,6 +81,7 @@ ul {
 		}
 
 		img {
+			width: 80%;
 			margin: auto;
 		}
 
@@ -179,6 +180,22 @@ ul {
 			}
 		}
 
+
+	}
+
+
+
+	@media screen and(max-width: 1200px){
+		.header-main {
+			.header-list {
+				width: 100%;
+				display: block;
+				margin: 0 auto;
+				padding-top: 0;
+
+			}
+
+		}
 
 	}
 
