@@ -62,36 +62,63 @@ html(lang="en-US")
             .row.size-container
               .five.columns
                 p
-                  <input class ="size-radio" type="radio" name="size" id="4"/>
+                  <input type="radio" name="size" id="4"/>
                   label(for="4") 4
                 p
-                  <input class ="size-radio" type="radio" name="size" id="5"/>
+                  <input type="radio" name="size" id="5"/>
                   label(for="5") 5
                 p
-                  <input class ="size-radio" type="radio" name="size" id="6"/>
+                  <input type="radio" name="size" id="6"/>
                   label(for="6") 6
                 p
-                  <input class ="size-radio" type="radio" name="size" id="7"/>
+                  <input type="radio" name="size" id="7"/>
                   label(for="7") 7
                 
               .seven.columns
-                <input type="radio" name="size"/> 8
-                <input type="radio" name="size"/> 9
-                <input type="radio" name="size"/> 10
-                <input type="radio" name="size"/> 11
+                p
+                  <input type="radio" name="size" id="8"/>
+                  label(for="8") 8
+                p
+                  <input type="radio" name="size" id="9"/>
+                  label(for="9") 9
+                p
+                  <input type="radio" name="size" id="10"/>
+                  label(for="10") 10
+                p
+                  <input type="radio" name="size" id="11"/>
+                  label(for="11") 11
+    
             .season-container
               p Season:
-              <input type="radio" name="seasons"/> All Seasons
-              <input type="radio" name="seasons"/> Spring
-              <input type="radio" name="seasons"/> Summer
-              <input type="radio" name="seasons"/> Fall
-              <input type="radio" name="seasons"/> Winter
+              p
+                <input type="radio" name="seasons" id="all"/>
+                label(for="all") All Seasons
+              p
+                <input type="radio" name="seasons" id="spring"/>
+                label(for="spring") Spring
+              p
+                <input type="radio" name="seasons" id="summer"/>
+                label(for="summer") Summer
+              p
+                <input type="radio" name="seasons" id="fall"/>
+                label(for="fall") Fall
+              p
+                <input type="radio" name="seasons" id="winter"/>
+                label(for="winter") Winter
             .type-container
               p Type:
-              <input type="radio" name="type"/> Any
-              <input type="radio" name="type"/> One-piece
-              <input type="radio" name="type"/> Tops
-              <input type="radio" name="type"/> Bottoms
+              p
+                <input type="radio" name="type" id="any"/>
+                label(for="any") Any
+              p
+                <input type="radio" name="type" id="one-piece"/>
+                label(for="one-piece") One-piece
+              p
+                <input type="radio" name="type" id="tops"/>
+                label(for="tops") Tops
+              p
+                <input type="radio" name="typp" id="bottoms"/>
+                label(for="bottoms") Bottoms
             .brand-container
               p Brand:
               select

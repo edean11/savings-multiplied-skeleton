@@ -347,7 +347,7 @@ ul {
 		width: 20px;
 	}
 
-	.seven {
+	.five,.seven {
 		p {
 			margin: 0;
 			padding: 0;
@@ -366,7 +366,33 @@ ul {
 		label {
 			display: inline-block;
 		}
+
+		p:last-child {
+				margin-bottom: 20px;
+			}
 	}
+
+	.season-container {
+		p{
+			margin:0;
+			&:last-child {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.type-container {
+		p{
+			margin:0;
+			&:last-child {
+				margin-bottom: 20px;
+			}
+		}
+	}	
+}
+
+.result-container {
+	border:1px solid red;
 }
 
 
