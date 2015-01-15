@@ -106,7 +106,12 @@ ul {
 			font-size: 1.35em;
 			padding-right: 6%;
 			margin: 0;
+
+			&:last-child {
+				padding-right:0;
+			}
 		}
+
 	}
 
 	input {
