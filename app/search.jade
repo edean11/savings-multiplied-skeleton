@@ -47,11 +47,17 @@ html(lang="en-US")
           .filter-container
             h6 Limit your search by:
             input(type="text")
-            button.button-primary Search
-            .condition-container
-              p Condition:
-              <input type="radio" name="condition" value="new"/> New
-              <input type="radio" name="condition" value="gently_used"/> Gently Used
+            button.button-primary.green Search
+            .row
+              .five.columns
+                p Condition:
+              .seven.columns  
+                p
+                  label(for="new") New
+                  <input type="radio" name="condition" id="new" value="new"/> 
+                p
+                  label(for="gently_used") Gently Used
+                  <input type="radio" name="condition" id="gently_used" value="gently_used"/>
             .size-container
               p Size:
               <input type="radio" name="size"/> 4
