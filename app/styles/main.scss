@@ -294,14 +294,14 @@ ul {
 	margin-top: 10px;
 	padding: 10px 20px 30px;
 	border-radius: 30px;
-	text-align: center;
+	//text-align: center;
 	color: darken(#EDF9D3, 50%);
 
 	h6 {
 		border-bottom: 2px solid darken(#EDF9D3, 50%);
 	}
 
-	input {
+	input[type="text"] {
 		width: 100px;
 		height: 20px;
 	}
