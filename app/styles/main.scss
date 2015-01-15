@@ -80,9 +80,8 @@ ul {
 		
 		}
 
-		img {
-			width: 80%;
-			margin: auto;
+		h5 {
+			color: #77CBD1;
 		}
 
 	}
@@ -109,6 +108,10 @@ ul {
 
 			&:last-child {
 				padding-right:0;
+			}
+
+			input {
+				width: 140px;
 			}
 		}
 
