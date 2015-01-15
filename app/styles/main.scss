@@ -103,7 +103,7 @@ ul {
 		li {
 			display: inline-block;
 			color: #A0627D;
-			font-size: 1.35em;
+			font-size: 1.7rem;
 			padding-right: 6%;
 			margin: 0;
 
@@ -244,12 +244,12 @@ ul {
 
 	}
 
-@media screen and(max-width: 600px){
+@media screen and(max-width: 600px) and(min-width: 550px){
 	
 	.header-main {
 		.header-logo {
 			img {
-				width: 60%;
+				width: 400px;
 			}
 		}
 	}
@@ -260,6 +260,21 @@ ul {
 
 }
 
+@media screen and(max-width: 550px){
+	
+	.header-main {
+		.header-logo {
+			img {
+				width: 80%;
+			}
+		}
+	}
+
+	.baby-images {
+		display: none;
+	}
+
+}
 
 
 
