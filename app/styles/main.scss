@@ -11,7 +11,7 @@ ul {
 
 .header {
 	background-color: #D6F1F0;
-	padding: 60px 120px 0;
+	padding: 60px 10% 0;
 }
 
 .header-signin {
@@ -98,7 +98,7 @@ ul {
 
 	ul {
 		display: inline-block;
-		width: 100%;
+		width: 80%;
 
 		li {
 			display: inline-block;
@@ -116,7 +116,7 @@ ul {
 }
 
 .content-container {
-	margin: 0 120px;
+	margin: 0 10%;
 	background-color: white;
 	border-radius: 0 0 30px 30px;
 
@@ -195,6 +195,32 @@ ul {
 
 			}
 
+		}
+
+		.nav-container {
+			
+			height: 100%;
+
+			ul {
+				margin-bottom: 10px;
+			}
+
+			input {
+				margin-top: 10px;
+			}
+		}
+
+		.content-container {
+
+			.left-container {
+				overflow: hidden;
+			}
+
+			.baby-images {
+				img {
+					width: 90%;
+				}
+			}
 		}
 
 	}
