@@ -413,10 +413,23 @@ ul {
 	}
 
 	.sort-results {
-		.green-container {
-			width: 100px;
-			height: 100px;
-			background-color: #EDF9D3;
+
+		li {
+			display: inline-block;
+			width: 150px;
+			padding: 2px 5px;
+			text-align: center;
+
+			.green-container {
+				width: 100px;
+				height: 100px;
+				background-color: #EDF9D3;
+				margin: 0 auto;
+			}
+
+			p {
+				margin: 2px 10px;
+			}
 		}
 	}
 
