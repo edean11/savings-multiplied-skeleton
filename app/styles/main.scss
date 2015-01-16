@@ -392,7 +392,34 @@ ul {
 }
 
 .result-container {
-	border:1px solid red;
+	color: darken(#8AB83A, 10%);
+
+	h6 {
+		padding-top: 10px;
+	}
+
+	.sort-container {
+		p {
+			display: inline;
+		}
+
+		.sort-list {
+			display:inline-block;
+			margin-left: 300px;;
+			li {
+				display:inline-block;
+			}
+		}
+	}
+
+	.sort-results {
+		.green-container {
+			width: 100px;
+			height: 100px;
+			background-color: #EDF9D3;
+		}
+	}
+
 }
 
 
