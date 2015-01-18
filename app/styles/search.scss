@@ -1,35 +1,13 @@
 @import "variables";
 @import "headings";
+@import "lists";
 
 body {
 	background-color: #78CBD1;
 }
 
-ul {
-	list-style: none;
-}
+@include top-list;
 
-.header {
-	background-color: #D6F1F0;
-	padding: 60px 10% 0;
-}
-
-.header-signin {
-	
-	diplay: block;
-	height: 30px;
-
-	li {
-		display: inline-block;
-		color: #78CBD1;
-		padding: 0 5px;
-
-		&:first-child {
-			border-right: 2px solid #78CBD1;
-			padding-right: 8px;
-		}		
-	}
-}
 
 .header-main {
 	background-color: white;
@@ -55,44 +33,12 @@ ul {
 			button {
 				width: 125px;
 			}
-			
-			.green{
-				background-color: #8AB83A;
-
-				&:hover {
-					background-color: darken(#8AB83A, 10%);
-				}
-			}
-
-			.purple {
-				background-color: #71278C;
-
-				&:hover {
-					background-color: darken(#71278C, 10%);
-				}
-
-			}
-
-			.pink {
-				background-color: #EA0089;
-
-				&:hover {
-					background-color: darken(#EA0089, 10%);
-				}
-
-			}
-		
-		}
-
-		h5 {
-			color: #77CBD1;
-			font-family: "Playfair Display";
-			font-weight: 900;
-
-		}
-
+			@include green_button;
+			@include teal_button;
+			@include purple_button;
+			@include hotpink_button;	
+		}	
 	}
-
 }
 
 .nav-container {
