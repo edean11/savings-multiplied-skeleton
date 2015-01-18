@@ -11,16 +11,23 @@ html(lang="en-US")
     link(rel="stylesheet" href="css/main.css")
 
   body
+
+      // - START PAGE
+      // - HEADING
     .header.u-full-width
       .header-content
         .header-signin
+          // * Top right sign in and sign up links *
           ul.u-pull-right
             li sign in
             li sign up
+        // * Start white body background color. *
         .header-main
           .row
+            // * Main logo taking up five columns on top left of Page. *
             .five.columns.header-logo
               img(src="img/savings-multiplied-logo.png")
+            // * Next seven columns containing colored button ul and paragraph with tagline. Note that these collapse under the logo with responsiveness. *
             .seven.columns.header-list
               ul
                 li 
@@ -32,35 +39,52 @@ html(lang="en-US")
                 li 
                   button.button-primary.pink Press
                 h5 where parents of multiples save, sell & share
-    .nav-container
+
+  .nav-container
       ul
         li Buy
         li Sell
         li How it Works
         li Links
         li Community
+        // * Search input *
         li
           input(type="text" placeholder="search")
+
+
+
     .content-container
       .row
+        // * Creating 4 column container for body of sorting content. *
+        // * Beginning of left-hand-side green container. *
         .four.columns
           .filter-container
             h6 Limit your search by:
+            // * Text input. *
             input(type="text")
+            // * Button to the side of the text input. * 
             button.button-primary.green Search
+            // * Adding a row to existing row. * 
             .row.condition-container
+              // * Nesting 5 columns in existing four columns. *
               .five.columns
                 p Condition:
+              // * Nesting 7 columns in existing columns to create right side input of green container. *
+              // * Note that these coloumns still add up to 12 columns within the four. *
               .seven.columns.condition-labels  
                 p
+                  // * Radio button for 'New.' *
                   <input type="radio" name="condition" id="new" value="new"/> 
-                  label(for="new") New
+                  label(for="new") New 
+                  // * Radio button for 'Gently Used.' *
                 p
                   <input type="radio" name="condition" id="gently_used" value="gently_used"/>
                   label(for="gently_used") Gently Used
              p.size-header Size:
             .row.size-container
+              // * Creating new row. Nesting 5 columns in existing four columns. *
               .five.columns
+                // * Radio buttons below. *
                 p
                   <input type="radio" name="size" id="4"/>
                   label(for="4") 4
@@ -73,8 +97,10 @@ html(lang="en-US")
                 p
                   <input type="radio" name="size" id="7"/>
                   label(for="7") 7
-                
+              // * Nesting 7 columns in existing columns to create right side input of green container. *
+              // * Note that these columns still add up to 12 columns within the four. *
               .seven.columns
+                // * Radio buttons below. *
                 p
                   <input type="radio" name="size" id="8"/>
                   label(for="8") 8
@@ -89,7 +115,9 @@ html(lang="en-US")
                   label(for="11") 11
     
             .season-container
+              // * Back in 4 column container. No sub containers at this point. *
               p Season:
+              // * Radio buttons below. *
               p
                 <input type="radio" name="seasons" id="all"/>
                 label(for="all") All Seasons
@@ -107,6 +135,7 @@ html(lang="en-US")
                 label(for="winter") Winter
             .type-container
               p Type:
+              // * Radio buttons below. *
               p
                 <input type="radio" name="type" id="any"/>
                 label(for="any") Any
@@ -122,23 +151,29 @@ html(lang="en-US")
             .brand-container
               p Brand:
               select
+                // * Formatted option box below. *
                 option Jane and Jack
                 option Other option
+        // Start of 8 columns that take the right side of the page. Background is white, moving away from green background in first 4 columns. *
         .eight.columns
           .result-container
+            // Search result heading. No links as of now. *
             h6.search-terms All > Twin > B/G 
             .sort-container
               p sort by:
               select
+                // * 3 option fromatted selection box. 
                 option Price
                 option Brand
                 option Date
+              // Sorted list on right hand side. *
               ul.sort-list
                 li pre.
                 li page num.
                 li next
                 li view all 
             .sort-results
+              // * List of sort results. Max 5 x 5, but will scale with responsiveness. *
               ul.sortresulsts-list
                 li
                   .green-container
@@ -176,8 +211,13 @@ html(lang="en-US")
                 li
                   .green-container
                   p Sailor Suits $15.00 Jane Joe 4 Hours
+                 li
+                  .green-container
+                  p Sailor Suits $15.00 Jane Joe 4 Hours
 
-    .link-footer
+  // - FOOTER WITH LINKS 
+  // * Footer part of parent 12 column row.
+  .link-footer
       ul
         li Link Here
         li Link Here
