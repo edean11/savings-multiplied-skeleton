@@ -1,50 +1,60 @@
-include ./partials/_layout.jade
+doctype html
+html(lang="en-US")
+  head
+    include ./partials/_head.jade
 
-// * HOMEPAGE CONTENT BEGINS HERE *
+  //- body
+  //-   // [if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]
+  //-   block content
 
-.content-container
-  // * Starting a new row to split columns within .u-full-width. *
-  .row
+  body 
+    include ./partials/_heading
     
-    // * 7 columns containing 2 paragraphs, 'shop_now' image, 'tree' image, and owl image on left. Note this will scale tos tack with responsiveness. Certain elements may also dissapear with scaling and responsive coding. *
-    .seven.columns.left-container
-      h5 We're making one aspect of life easier for parents of multiples:
-      
-      .owl-content-container
-        img.content-owl(src="img/owl_light_blue_32.png")
-        p buying and selling gently used sets of clothes!
-      
-      a(href="search.html")
-        img.u-pull-right.shop-now(src="img/shop_now.png")
-      img.u-pull-right.tree(src="img/tree.png")
+    // * HOMEPAGE CONTENT BEGINS HERE *
 
-    // * 5 columns to the right of the 7 displaying only baby images. Will also scale with responsiveness and disappear with a mobile size. 
-    .five.columns
-      .baby-images 
-          img(src="img/twins.jpg")
-          img(src="img/triplets.jpg")
-          img(src="img/quads.jpg")
+    .content-container
+      // * Starting a new row to split columns within .u-full-width. *
+      .row
+        
+        // * 7 columns containing 2 paragraphs, 'shop_now' image, 'tree' image, and owl image on left. Note this will scale tos tack with responsiveness. Certain elements may also dissapear with scaling and responsive coding. *
+        .seven.columns.left-container
+          h5 We're making one aspect of life easier for parents of multiples:
+          
+          .owl-content-container
+            img.content-owl(src="img/owl_light_blue_32.png")
+            p buying and selling gently used sets of clothes!
+          
+          a(href="search.html")
+            img.u-pull-right.shop-now(src="img/shop_now.png")
+          img.u-pull-right.tree(src="img/tree.png")
 
-  // * Container holding dot image spanning entire page. *
-  .dot-container
+        // * 5 columns to the right of the 7 displaying only baby images. Will also scale with responsiveness and disappear with a mobile size. 
+        .five.columns
+          .baby-images 
+              img(src="img/twins.jpg")
+              img(src="img/triplets.jpg")
+              img(src="img/quads.jpg")
 
-  // * Container with links to social media and message board *
-  .social-media-container
-    ul
-      li
-        img(src="img/facebook_footer.png")
-      li
-        img(src="img/twitter_footer.png")
-      li
-        img(src="img/message_board_footer.png")
-      li
-        img(src="img/special_offers_footer.png")
-// * End white content background. *
+      // * Container holding dot image spanning entire page. *
+      .dot-container
+
+      // * Container with links to social media and message board *
+      .social-media-container
+        ul
+          li
+            img(src="img/facebook_footer.png")
+          li
+            img(src="img/twitter_footer.png")
+          li
+            img(src="img/message_board_footer.png")
+          li
+            img(src="img/special_offers_footer.png")
+    // * End white content background. *
 
 
-// GLOBAL FOOTER WITH LINKS 
+    // GLOBAL FOOTER WITH LINKS 
 
-include ./partials/_footer
+    include ./partials/_footer
 
 
-    script(src="js/main.js")
+        script(src="js/main.js")
