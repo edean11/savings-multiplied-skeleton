@@ -1,90 +1,19 @@
 @import "variables";
 @import "headings";
 @import "lists";
-@import "buttons";
 @import "responsive";
-
-
-html 
 
 body {
 	background-color: $dark-teal;
-	min-width: 480;
-	height: 100%;
 }
 
 // THESE ELEMENTS MAKE UP THE TOP WHITE AREA
 
-@include top_list;
+@include top-list;
 @include header_main;
 @include pink_nav_list;
 
-
-.content-container {
-	margin: 0 10%;
-	background-color: white;
-	border-radius: 0 0 30px 30px;
-
-
-	.content-header {
-		color: $medium-green;
-		padding: 20px 0 0 20px;
-		margin-right: 10px 10px 5px 5px;
-	}
-
-	.left-container {
-		padding: 20px 0 0 20px;
-	}
-
-	.owl-content-container {
-		img {
-			display: inline-block;
-			padding-left: 20px;
-			width: 40px;
-		}
-		p {
-			display: inline-block;
-			color: #6BBBC0;
-			font-size: 1.5em;
-		}
-	}
-
-	.tree {
-		padding-top: 100px;
-		padding-right: 20px;
-	}
-
-	.right-container {
-		padding: 20px 20px 0 0;
-		margin: 5px 20px 5px -5px;
-
-		.baby-images {
-			margin-right: 10px 10px 5px 5px;	
-		}
-	}	
-
-	.dot-container {
-		background-image: url("../img/dotted_line.png");
-		background-repeat: repeat-x;
-		height: 30px;
-	}
-
-	.social-media-container {
-
-		ul {
-			text-align: center;
-		}
-		li {
-			display:inline-block;
-			padding:0 10px;
-		}
-	}
-}
-
-@include link_footer_list; 
-
-// THIS SECTION IS ALL CODE FOR THE SEARCHPAGE
-// ??? - SHOULD IT GO IN ITS OWN SCSS FILE, AND IF SO, HOW DOES THAT SYNTAX WORK?
+   // SEARCHPAGE CODE
 
 .filter-container {
 	background-color: $light-green;
@@ -155,20 +84,27 @@ body {
 		}
 
 		p:last-child {
-		margin-bottom: 20px;
+			margin-bottom: 20px;
 		}
 	}
 
-	.season-container,
-	.type-container {
+	.season-container {
 		p{
-			text-align: left;
 			margin:0;
 			&:last-child {
 				margin-bottom: 20px;
 			}
 		}
 	}
+
+	.type-container {
+		p{
+			margin:0;
+			&:last-child {
+				margin-bottom: 20px;
+			}
+		}
+	}	
 }
 
 .result-container {
@@ -217,7 +153,16 @@ body {
 }
 
 
-.tagline {
-	min-width: 60px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,106 @@
+
+// SIGN-IN & SIGN-OUT "BUTTONS" AT VERY TOP OF PAGE
+
+@mixin top_list {
+	ul {
+		list-style: none;
+	}
+
+	.header {
+		background-color: $light-teal;
+		padding: 60px 10% 0;
+	}
+
+	.header-signin {
+		display: block;
+		height: 30px;
+
+		li {
+			display: inline-block;
+			color: $dark-teal;
+			padding: 0 5px;
+
+			&:first-child {
+				border-right: 2px solid $dark-teal;
+				padding-right: 8px;
+			}		
+		}
+	}
+}
+
+// PINK NAVIGATION BAR SEPARATING TOP & BOTTOM PARTS OF PAGE
+
+@mixin pink_nav_list {
+	.nav-container {
+		background-color: $dull-pink;
+		text-align: center;
+		font-size: 1.5rem;
+
+		ul {
+			display: inline-block;
+			width: 60%;
+			margin-bottom: 0px;
+			padding-left: 30px;
+			//text-align: center;
+
+			li {
+				display: inline-block;
+				font-family: $font-fat;
+				color: $maroon;
+				padding-right: 6%;
+				margin: 0;		
+			}
+		}
+
+		@include pink_search_button;
+	}
+}
+
+// COLORED BUTTON LIST
+
+@mixin header_list {
+	.header-list {
+		text-align: center;
+		padding-top: 40px;
+		overflow: hidden;
+
+		ul {
+			margin: 0;
+
+			button {
+				width: 125px;
+				border-radius: 50px;
+			}
+
+			@include green_button;
+			@include teal_button;
+			@include purple_button;
+			@include hotpink_button;
+
+		}
+	}
+}
+
+// FOOTER LINK LIST
+
+@mixin link_footer_list {
+	.link-footer {
+		ul {
+			text-align: center;
+		}
+
+		li {
+			display:inline-block;
+			padding:0 20px;
+			color: #B3E3E5;
+			border-right: 2px solid #ABDFE2;
+
+			&:last-child {
+				border: none;
+			}
+		}
+	}	
+}
+
+
+

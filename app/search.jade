@@ -1,189 +1,124 @@
-doctype html
-html(lang="en-US")
-  head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    title Savings Multiplied
-    link(rel="stylesheet" href="/vendor/skeleton/css/skeleton.css")
-    link(rel="stylesheet" href="/vendor/skeleton/css/normalize.css")
-    link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Playfair+Display:400,900" type='text/css')
-    link(rel="stylesheet" href="css/main.css")
+include ./partials/_heading
 
-  body
-    .header.u-full-width
-      .header-content
-        .header-signin
-          ul.u-pull-right
-            li sign in
-            li sign up
-        .header-main
-          .row
-            .five.columns.header-logo
-              img(src="img/savings-multiplied-logo.png")
-            .seven.columns.header-list
-              ul
-                li 
-                  button.button-primary About
-                li 
-                  button.button-primary.green Contact
-                li 
-                  button.button-primary.purple Blog
-                li 
-                  button.button-primary.pink Press
-                h5 where parents of multiples save, sell & share
-    .nav-container
-      ul
-        li Buy
-        li Sell
-        li How it Works
-        li Links
-        li Community
-        li
-          input(type="text" placeholder="search")
-    .content-container
-      .row
-        .four.columns
-          .filter-container
-            h6 Limit your search by:
-            input(type="text")
-            button.button-primary.green Search
-            .row.condition-container
-              .five.columns
-                p Condition:
-              .seven.columns.condition-labels  
-                p
-                  <input type="radio" name="condition" id="new" value="new"/> 
-                  label(for="new") New
-                p
-                  <input type="radio" name="condition" id="gently_used" value="gently_used"/>
-                  label(for="gently_used") Gently Used
-             p.size-header Size:
-            .row.size-container
-              .five.columns
-                p
-                  <input type="radio" name="size" id="4"/>
-                  label(for="4") 4
-                p
-                  <input type="radio" name="size" id="5"/>
-                  label(for="5") 5
-                p
-                  <input type="radio" name="size" id="6"/>
-                  label(for="6") 6
-                p
-                  <input type="radio" name="size" id="7"/>
-                  label(for="7") 7
-                
-              .seven.columns
-                p
-                  <input type="radio" name="size" id="8"/>
-                  label(for="8") 8
-                p
-                  <input type="radio" name="size" id="9"/>
-                  label(for="9") 9
-                p
-                  <input type="radio" name="size" id="10"/>
-                  label(for="10") 10
-                p
-                  <input type="radio" name="size" id="11"/>
-                  label(for="11") 11
+// * SEARCHPAGE CONTENT BEGINS HERE *
+
+.content-container
+  
+  .row
+    .four.columns
+      .filter-container
+        include ./partials/_searchfilter
+
+        .row.condition-container
+          .five.columns
+            p Condition:
+          .seven.columns.condition-labels 
+            include ./partials/_conditioninput
     
-            .season-container
-              p Season:
+        // * WARNING: USE CAUTION IF YOU TRY MAKING THIS SECTION INTO A PARTIAL! *    
+        p.size-header Size:
+          .row.size-container
+            .five.columns
+              // * Radio buttons below. *
               p
-                <input type="radio" name="seasons" id="all"/>
-                label(for="all") All Seasons
+                <input type="radio" name="size" id="4"/>
+                label(for="4") 4
               p
-                <input type="radio" name="seasons" id="spring"/>
-                label(for="spring") Spring
+                <input type="radio" name="size" id="5"/>
+                label(for="5") 5
               p
-                <input type="radio" name="seasons" id="summer"/>
-                label(for="summer") Summer
+                <input type="radio" name="size" id="6"/>
+                label(for="6") 6
               p
-                <input type="radio" name="seasons" id="fall"/>
-                label(for="fall") Fall
+                <input type="radio" name="size" id="7"/>
+                label(for="7") 7
+                
+            // * Nesting 7 columns in existing columns to create right side input of green container. *
+            // * Note that these columns still add up to 12 columns within the four. *
+            // * Second Set of Size Radio buttons below. *
+            .seven.columns
               p
-                <input type="radio" name="seasons" id="winter"/>
-                label(for="winter") Winter
-            .type-container
-              p Type:
+                <input type="radio" name="size" id="8"/>
+                label(for="8") 8
               p
-                <input type="radio" name="type" id="any"/>
-                label(for="any") Any
+                <input type="radio" name="size" id="9"/>
+                label(for="9") 9
               p
-                <input type="radio" name="type" id="one-piece"/>
-                label(for="one-piece") One-piece
+                <input type="radio" name="size" id="10"/>
+                label(for="10") 10
               p
-                <input type="radio" name="type" id="tops"/>
-                label(for="tops") Tops
-              p
-                <input type="radio" name="typp" id="bottoms"/>
-                label(for="bottoms") Bottoms
-            .brand-container
-              p Brand:
-              select
-                option Jane and Jack
-                option Other option
-        .eight.columns
-          .result-container
-            h6.search-terms All > Twin > B/G 
-            .sort-container
-              p sort by:
-              select
-                option Price
-                option Brand
-                option Date
-              ul.sort-list
-                li pre.
-                li page num.
-                li next
-                li view all 
-            .sort-results
-              ul.sortresulsts-list
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
-                li
-                  .green-container
-                  p Sailor Suits $15.00 Jane Joe 4 Hours
+                <input type="radio" name="size" id="11"/>
+                label(for="11") 11
 
-    .link-footer
-      ul
-        li Link Here
-        li Link Here
-        li Link Here
-        li Link Here
-        li Link Here
-        li Link Here
+        .season-container
+          include ./partials/_seasoninput
+
+          include ./partials/_typeinput
+
+          include ./partials/_brandinput
+
+    // Start of 8 columns that take the right side of the page. Background is white, moving away from green background in first 4 columns. *
+    .eight.columns
+      .result-container
+        // Search result heading. No links as of now. *
+        h6.search-terms All > Twin > B/G 
+        .sort-container
+          p sort by:
+          select
+            // * 3 option fromatted selection box. 
+            option Price
+            option Brand
+            option Date
+          // Sorted list on right hand side. *
+          ul.sort-list
+            li pre.
+            li page num.
+            li next
+            li view all 
+        .sort-results
+          // * List of sort results. Max 5 x 5, but will scale with responsiveness. *
+          ul.sortresulsts-list
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+             li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+
+// FOOTER WITH LINKS 
+include ./partials/_footer
 
     script(src="js/main.js")

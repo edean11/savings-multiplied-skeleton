@@ -1,0 +1,42 @@
+.header.u-full-width 
+  .header-content
+    .header-signin
+      // * Top right sign in and sign up links *
+      ul.u-pull-right
+        li sign in
+        li sign up
+
+    // * Start white body background color. *
+    .header-main
+      .row
+
+        // * Main logo taking up five columns on top left of Page. *
+        .five.columns.header-logo
+          img(src="img/savings-multiplied-logo.png")
+
+        // * Next seven columns containing colored button ul and paragraph with tagline. Note that these collapse under the logo with responsiveness. *
+        .seven.columns.header-list 
+          ul
+            li 
+              button.button-primary.green About
+            li 
+              button.button-primary.teal Contact
+            li 
+              button.button-primary.purple Blog
+            li 
+              button.button-primary.pink Press
+            li
+              img.tagline(src="img/tagline.png")
+
+
+// * Pink nav bar with ul items. Note this div also spans the entire 12 columns under .header.u-full-width. *
+// * Break in white background to span nav bar with pink.
+.nav-container
+  ul
+    li Buy
+    li Sell
+    li How it Works
+    li Links
+    li Community
+
+  input(type="text" placeholder="search")
