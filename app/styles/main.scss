@@ -4,13 +4,12 @@
 @import "buttons";
 @import "responsive";
 
+
 html 
 
 body {
-
 	background-color: $dark-teal;
-	max-width: 1200px;
-	margin: auto;
+	min-width: 480;
 	height: 100%;
 }
 
@@ -52,6 +51,7 @@ body {
 
 	.tree {
 		padding-top: 100px;
+		padding-right: 20px;
 	}
 
 	.right-container {

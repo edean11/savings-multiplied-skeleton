@@ -58,8 +58,9 @@
 	input {
 		width: 140px;
 		font-family: $font-thin;
-		display: inline-block;
-		border-radius: 80px;
+		display: inline;
+		margin-right: 55px;
+		border-radius: 50px;
 		text-align: center;
 		background: white image-url('img/search.gif') no-repeat 5px center;
 	}

@@ -34,27 +34,25 @@
 	.nav-container {
 		background-color: $dull-pink;
 		text-align: center;
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 
 		ul {
 			display: inline-block;
-			width: 80%;
+			width: 60%;
+			margin-bottom: 0px;
+			padding-left: 30px;
+			//text-align: center;
 
 			li {
 				display: inline-block;
 				font-family: $font-fat;
 				color: $maroon;
 				padding-right: 6%;
-				margin: 0;
-
-				&:last-child {
-					padding-right:0;
-				}
-
-				@include pink_search_button;
-				
+				margin: 0;		
 			}
 		}
+
+		@include pink_search_button;
 	}
 }
 
