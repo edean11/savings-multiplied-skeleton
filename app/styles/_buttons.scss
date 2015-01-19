@@ -1,0 +1,49 @@
+// COLORED BUTTONS AT THE TOP
+
+
+@mixin green_button {
+	.green{
+		background-color: $medium-green;
+		border-color: $medium-green;
+
+		&:hover {
+			background-color: darken($medium-green, 10%);
+		}
+	}
+}
+
+@mixin teal_button {
+	.teal{
+		background-color: $dark-teal;
+		border-color: $dark-teal;
+
+		&:hover {
+			background-color: darken($dark-teal, 10%);
+		}
+	}
+}
+
+@mixin purple_button {
+	.purple {
+		background-color: $purple;
+		border-color: $purple;
+
+		&:hover {
+			background-color: darken($purple, 10%);
+				}
+			}
+}
+
+@mixin hotpink_button {
+	.pink {
+		background-color: $hotpink;
+		border-color: $hotpink;
+
+		&:hover {
+			background-color: darken($hotpink, 10%);
+		}
+	}
+}
+
+// SEARCH BUTTON IN PINK NAV AREA
+
