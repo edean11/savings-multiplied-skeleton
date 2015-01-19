@@ -1,7 +1,3 @@
-$primary-color: orange;
-
-$font-stack: Impact, Charcoal, sans-serif;
-
 
 // font stacks
 
@@ -11,13 +7,43 @@ $font-fat: 'Corben', Times, serif;
 // colors
 
 $dull-pink: #F4CAD2;
-$dark-teal: #76C7CD;
+$dark-teal: #75cbd1;
 $light-teal: #B9E5E6;
 $maroon: #6F0F49;
 $light-green: #ECFAD3;
-$medium-green: #8AB93A;
-$purple: #71288B;
-$hotpink: #EB008A;
+$medium-green: #81ae28;
+$purple: #642783;
+$hotpink: #e80081;
+
+// HEADERS
+
+h1 {
+  font-family: $font-fat;
+}
+
+h5 {
+  font-family: $font-fat;
+  color: $medium-green;
+}
+
+h4 {
+	font-family: $font-thin;
+	font-style: bold;
+	color: blue;
+}
+
+h5 {
+  
+}
+
+h6 {
+		border-bottom: 2px solid darken(#EDF9D3, 50%);
+	}
 
 
-
+// $h1-font-size: em-calc(44);
+$h2-font-size: em-calc(28);
+$h3-font-size: em-calc(24);
+$h4-font-size: em-calc(18);
+$h5-font-size: em-calc(16);
+// $h6-font-size: 1em;

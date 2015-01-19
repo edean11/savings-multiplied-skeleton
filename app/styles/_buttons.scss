@@ -1,11 +1,12 @@
 
-// COLORED BUTTONS AT THE TOP
-
+// FOUR COLORED BUTTONS AT THE TOP
 
 @mixin green_button {
 	.green{
 		background-color: $medium-green;
 		border-color: $medium-green;
+		font-family: $font-thin;
+		font-size: 2rem;
 
 		&:hover {
 			background-color: darken($medium-green, 10%);
@@ -17,6 +18,8 @@
 	.teal{
 		background-color: $dark-teal;
 		border-color: $dark-teal;
+		font-family: $font-thin;
+		font-size: 2rem;
 
 		&:hover {
 			background-color: darken($dark-teal, 10%);
@@ -28,6 +31,8 @@
 	.purple {
 		background-color: $purple;
 		border-color: $purple;
+		font-family: $font-thin;
+		font-size: 2rem;
 
 		&:hover {
 			background-color: darken($purple, 10%);
@@ -39,6 +44,8 @@
 	.pink {
 		background-color: $hotpink;
 		border-color: $hotpink;
+		font-family: $font-thin;
+		font-size: 2rem;
 
 		&:hover {
 			background-color: darken($hotpink, 10%);
@@ -47,4 +54,13 @@
 }
 
 // SEARCH BUTTON IN PINK NAV AREA
-
+@mixin pink_search_button {
+	input {
+		width: 140px;
+		font-family: $font-thin;
+		display: inline-block;
+		border-radius: 80px;
+		text-align: center;
+		background: white image-url('img/search.gif') no-repeat 5px center;
+	}
+}
