@@ -4,10 +4,7 @@
 @import "buttons";
 @import "responsive";
 
-html {
-	background-color: #bdffff;
-	height: 100%;
-}
+html 
 
 body {
 
@@ -31,7 +28,12 @@ body {
 
 
 	.content-header {
-		color: orange;
+		color: $medium-green;
+		padding: 20px 0 0 20px;
+		margin-right: 10px 10px 5px 5px;
+	}
+
+	.left-container {
 		padding: 20px 0 0 20px;
 	}
 
@@ -52,9 +54,14 @@ body {
 		padding-top: 100px;
 	}
 
-	.baby-images {
+	.right-container {
 		padding: 20px 20px 0 0;
-	}
+		margin: 5px 20px 5px -5px;
+
+		.baby-images {
+			margin-right: 10px 10px 5px 5px;	
+		}
+	}	
 
 	.dot-container {
 		background-image: url("../img/dotted_line.png");
