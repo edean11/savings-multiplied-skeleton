@@ -14,10 +14,10 @@ include ./partials/_heading
             p Condition:
           .seven.columns.condition-labels 
             include ./partials/_conditioninput
-        
+    
+        // * WARNING: USE CAUTION IF YOU TRY MAKING THIS SECTION INTO A PARTIAL! *    
         p.size-header Size:
           .row.size-container
-            // * Creating new row. Nesting 5 columns in existing four columns. *
             .five.columns
               // * Radio buttons below. *
               p
@@ -32,10 +32,11 @@ include ./partials/_heading
               p
                 <input type="radio" name="size" id="7"/>
                 label(for="7") 7
+                
             // * Nesting 7 columns in existing columns to create right side input of green container. *
             // * Note that these columns still add up to 12 columns within the four. *
+            // * Second Set of Size Radio buttons below. *
             .seven.columns
-              // * Radio buttons below. *
               p
                 <input type="radio" name="size" id="8"/>
                 label(for="8") 8
