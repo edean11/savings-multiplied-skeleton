@@ -6,13 +6,14 @@
 
 html {
 	background-color: #bdffff;
-	height: 100%;
+	// height: 100%;
 }
 
 body {
 
 	background-color: $dark-teal;
 	max-width: 1200px;
+	min-width: 480
 	margin: auto;
 	height: 100%;
 }
