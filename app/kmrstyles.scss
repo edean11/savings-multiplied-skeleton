@@ -1,4 +1,59 @@
 
-<!-- This should be the font link that goes at the head of the jade --> 
+// This should be the font link that goes at the head of the jade file: 
 
 link(href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css")
+
+// This is copied from my jeet code:
+
+      ul {  
+        padding: 40px 0px 0px 0px;
+        width: 100%;
+      }
+
+      li {
+        @include cf();
+        @include col(1/4 1/2 4/5);    // EACH LIST ITEM IS GOING TO OCCUPY ONE -- OF FOUR -- COLUMNS
+        list-style: none;
+        display: inline;
+        font-family: 'Helvetica';
+        font-weight: lighter;
+        font-size: 16px;
+        color: #5FAEB4;
+        text-align: center;
+        border-radius: 50px 50px 50px 50px;
+        padding: 1px 6px 1px 6px;
+        margin: 0px;
+
+        a {
+        
+        }  
+      }
+  }
+
+  li:nth-child(1) {      // THIS SECTION IS STYLING THE FAKE "BUTTONS" IN THE LIST AT THE TOP
+    background-color: #77CCD1;
+    color: #FFF;
+  }
+  li:nth-child(2) {
+    background-color: #8AB93A;
+    color: #FFF;
+  }
+  li:nth-child(3) {
+    background-color: #71288C;
+    color: #FFF;
+  }
+  li:nth-child(4) {
+    background-color: #EB008A;
+    color: #FFF;
+  }
+
+
+  // Taken from their baby images section:
+
+            ul.baby-images 
+            li
+              img(src="img/twins.jpg")
+            li
+              img(src="img/triplets.jpg")
+            li
+              img(src="img/quads.jpg")
