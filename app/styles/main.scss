@@ -3,11 +3,18 @@
 @import "lists";
 @import "buttons";
 @import "responsive";
-@import "search";
+
+html {
+	background-color: #bdffff;
+	height: 100%;
+}
 
 body {
 
 	background-color: $dark-teal;
+	max-width: 1200px;
+	margin: auto;
+	height: 100%;
 }
 
 // THESE ELEMENTS MAKE UP THE TOP WHITE AREA
@@ -21,6 +28,7 @@ body {
 	margin: 0 10%;
 	background-color: white;
 	border-radius: 0 0 30px 30px;
+
 
 	.content-header {
 		color: orange;
